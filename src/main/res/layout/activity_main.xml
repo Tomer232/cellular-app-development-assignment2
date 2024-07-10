@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mainActivity_BTN_goBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textColor="@color/green_200"
+        android:fontFamily="monospace"
+        android:textSize="20sp"
+        app:backgroundTint="@color/brown_200"
+        app:cornerRadius="90dp"
+        android:layout_margin="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/main_IMG_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mountain"
+        />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Hearts layout -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/main_LBL_score"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="120dp"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_heart1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                app:srcCompat="@drawable/heart" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_heart2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                app:srcCompat="@drawable/heart" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_heart3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                app:srcCompat="@drawable/heart" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Sharks grid -->
+        <!-- Sharks Row 1 -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_1_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_1_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_1_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_1_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_1_5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Sharks Row 2 -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_2_1"
+                android:visibility="invisible"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_2_2"
+                android:visibility="invisible"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_2_3"
+                android:visibility="invisible"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_2_4"
+                android:visibility="invisible"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_2_5"
+                android:visibility="invisible"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/log"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Sharks Row 3 -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_3_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_3_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_3_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_3_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_3_5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Sharks Row 4 -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_4_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_4_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_4_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_4_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_4_5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Sharks Row 5 -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_5_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_5_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_5_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_5_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_5_5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Sharks Row 6 -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_6_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_6_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_6_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_6_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_6_5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Sharks Row 7 -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_7_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_7_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_7_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_7_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_7_5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Sharks Row 8 -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_8_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_8_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_8_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_8_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_8_5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Sharks Row 9 -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_9_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_9_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_9_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_9_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_9_5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Sharks Row 10 -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_10_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_10_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_10_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_10_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_log_10_5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/log"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Plane Row -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_frog1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/frog"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_frog2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/frog"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_frog3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/frog"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_frog4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/frog"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_frog5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/frog"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Buttons layout -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:id="@+id/main_BTN_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:backgroundTint="@color/brown_200"
+                    app:icon="@drawable/ic_left"
+                    app:iconTint="@color/black"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:id="@+id/main_BTN_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:backgroundTint="@color/brown_200"
+                    app:icon="@drawable/ic_right"
+                    app:iconTint="@color/black"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>
